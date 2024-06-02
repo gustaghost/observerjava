@@ -5,30 +5,25 @@ public class Main {
 
         ConcreteSubject subject = new ConcreteSubject();
 
-        ConcreteObserver observador1 = new ConcreteObserver("Phoenix");
+        ConcreteObserver observador1 = new ConcreteObserver("Fade");
         ConcreteObserver observador2 = new ConcreteObserver("Sova");
-        ConcreteObserver observador3 = new ConcreteObserver("Omen");
+        ConcreteObserver observador3 = new ConcreteObserver("Skye");
 
         subject.registerObserver(observador1);
         subject.registerObserver(observador2);
         subject.registerObserver(observador3);
 
-        System.out.println("Definindo mensagem a ser enviada para os observadores:");
-        subject.setMessage("Boa noite!");
+        System.out.println("Todos os observadores:");
+        subject.setMessage("Another Life");
 
 
-        System.out.println("\nRemovendo observador 2");
+        System.out.println("\nRemovendo observador 2 e alterando a mensagem:");
         subject.removeObserver(observador2);
+        subject.setMessage("Last Resort");
 
 
-        System.out.println("'Mudando a mensagem:'");
-        subject.setMessage("Dinossauro Rex");
-
-
-        System.out.println("\nRemovendo observador 1");
+        System.out.println("\nRemovendo observador 1 e alterando a mensagem:");
         subject.removeObserver(observador1);
-
-        System.out.println("Definindo mensagem final:");
         subject.setMessage("Chop Suey!");
     }
 }
