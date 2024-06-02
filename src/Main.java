@@ -5,9 +5,9 @@ public class Main {
 
         ConcreteSubject subject = new ConcreteSubject();
 
-        ConcreteObserver observador1 = new ConcreteObserver("Mickey Mouse");
-        ConcreteObserver observador2 = new ConcreteObserver("Pateta");
-        ConcreteObserver observador3 = new ConcreteObserver("Pato Donald");
+        ConcreteObserver observador1 = new ConcreteObserver("Phoenix");
+        ConcreteObserver observador2 = new ConcreteObserver("Sova");
+        ConcreteObserver observador3 = new ConcreteObserver("Omen");
 
         subject.registerObserver(observador1);
         subject.registerObserver(observador2);
